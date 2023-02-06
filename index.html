@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>HTML Elements</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!-- We can create heading using h1 through h6 as tags.-->
+        <h1>A Large Heading</h1>
+        <h2>A Smaller Heading</h2>
+        <h6>The Smallet Heading</h6>
+
+        <!-- The strong and i tags give us bold and italics respectively.-->
+        A <strong>bold</strong> word and an <i>italicized</i> word!
+
+        <!-- We can link to another page (such as cs50's page) using a.-->
+        View the <a href="https://google.com"> Google search engine</a>!<br>
+
+        <!-- We used ul for an unordered list and ol for an ordered one. Both ordered and unordered lists contain li, or list items. -->
+        An unordered list:
+        <ul>
+            <li>foo</li>
+            <li>bar</li>
+            <li>baz</li>
+        </ul>
+        An ordered list:
+        <ol>
+            <li>foo</li>
+            <li>bar</li>
+            <ul>
+                <li>hello</li>
+                <li>goodbye</li>
+                <li>hello</li>
+            </ul>
+            <li>baz</li>
+        </ol>
+
+        <!-- Image require a src attribute, which can be either the path to a file on your computer or the link to an image online. It also includes an alt attribute, which gives a description in case the imager can't be loaded. -->
+        An image:<br>
+        <img src="cat.jpg" width="300" alt="Cat picture">
+        <!-- We can also see above that some elements that don't contain other ones, closing tags are not necessary. -->
+
+        <!-- A few different tags are cecessary  to create a table.-->
+        <table>
+            <thread>
+                <th>Ocean</th>
+                <th>Average Depth</th>
+                <th>Max Depth</th>
+            </thread>
+            <tbody>
+                <tr>
+                    <td>Pacific</td>
+                    <td>4280 m</td>
+                    <td>10911 m</td>
+                </tr>
+                <tr>
+                    <td>Atlantic</td>
+                    <td>3646</td>
+                    <td>8486</td>
+                </tr>
+            </tbody>
+        </table>
+        <form>
+            First name:
+            <input type="text" placeholder="First Name" name="First">
+            Password:
+            <input type="password" placeholder="Password" name="password">
+            <div>
+                Favorite Color:
+                <input name="color" type="radio" value="blue"> Blue
+                <input name="color" type="radio" value="green"> Green
+                <input name="color" type="radio" value="yellow"> yellow
+                <input name="color" type="radio" value="red" > Red
+            </div>
+            <input type="submit">
+        </form>
+    </body>
+</html>
